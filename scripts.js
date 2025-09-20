@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('navToggle');
-  const links  = document.getElementById('navLinks');
-  const nav    = document.getElementById('siteNav');
+  const links = document.getElementById('navLinks');
+  const nav = document.getElementById('siteNav');
 
   if (!toggle || !links) {
     console.warn('Nav toggle/links not found');
