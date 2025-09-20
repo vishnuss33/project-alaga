@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALAGA - Home</title>
+
+  <!-- Google Fonts + Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION (replace your current nav) -->
+  <nav id="siteNav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" id="navLogo" class="nav-logo">
+        <img src="https://picsum.photos/140/40?random=12" alt="ALAGA Logo">
+      </a>
+
+      <!-- Toggle button (mobile) -->
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <!-- Links -->
+      <ul id="navLinks" class="nav-links" role="menubar" aria-hidden="true">
+        <li role="none"><a role="menuitem" href="index.html" class="nav-link">Home</a></li>
+        <li role="none"><a role="menuitem" href="gallery.html" class="nav-link">Gallery</a></li>
+        <li role="none"><a role="menuitem" href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Celebrate Individuality</h1>
+        <p>Handloom Dresses & Imitation Jewellery</p>
+        <div class="hero-buttons">
+          <a href="gallery.html" class="btn btn-large">View Gallery</a>
+          <a href="contact.html" class="btn btn-large">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Canvas for comets -->
+    <canvas id="cometCanvas"></canvas>
+  </section>
+
+
+  <!-- Welcome Section -->
+  <section class="welcome fade-in">
+    <div class="container">
+      <h2>Welcome to ALAGA</h2>
+      <p>
+        Discover the elegance of handloom dresses and the charm of imitation jewellery,
+        crafted to celebrate individuality. Our mission is to blend tradition with modern style,
+        making every piece unique just like you.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Highlights Section -->
+  <div class="container section highlights fade-in">
+    <h2>Our Highlights</h2>
+    <div class="row">
+
+      <!-- Handloom Dresses -->
+      <div class="col s12 m6 l4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://picsum.photos/400/250?random=1" alt="Handloom Dresses">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Handloom Dresses</span>
+            <p>Authentic weaves with a modern touch.</p>
+          </div>
+          <div class="card-action">
+            <a href="gallery.html" class="btn-card">View Gallery</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imitation Jewellery -->
+      <div class="col s12 m6 l4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://picsum.photos/400/250?random=2" alt="Handloom Dresses">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Handloom Dresses</span>
+            <p>Authentic weaves with a modern touch.</p>
+          </div>
+          <div class="card-action">
+            <a href="gallery.html" class="btn-card">View Gallery</a>
+          </div>
+        </div>
+      </div>
+      <!-- Traditional Elegance -->
+      <div class="col s12 m6 l4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://picsum.photos/400/250?random=3" alt="Handloom Dresses">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Handloom Dresses</span>
+            <p>Authentic weaves with a modern touch.</p>
+          </div>
+          <div class="card-action">
+            <a href="gallery.html" class="btn-card">View Gallery</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <!-- Contact Column -->
+        <div class="footer-col contact">
+          <h5>Contact Us</h5>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Kochi, Kerala, India</p>
+          <p><i class="fas fa-phone-alt fa-flip-horizontal"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@alaga.com</p>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="footer-col follow">
+          <h5 class="follow-title">Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.threads.net/" target="_blank"><i class="fab fa-threads"></i></a>
+            <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 ALAGA | Celebrate Individuality</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>

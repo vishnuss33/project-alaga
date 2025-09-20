@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - ALAGA</title>
+
+  <!-- Google Fonts + Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION (replace your current nav) -->
+<nav id="siteNav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" id="navLogo" class="nav-logo">
+      <img src="https://picsum.photos/140/44?random=12" alt="ALAGA Logo">
+    </a>
+
+    <!-- Toggle button (mobile) -->
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <!-- Links -->
+    <ul id="navLinks" class="nav-links" role="menubar" aria-hidden="true">
+      <li role="none"><a role="menuitem" href="index.html" class="nav-link">Home</a></li>
+      <li role="none"><a role="menuitem" href="gallery.html" class="nav-link">Gallery</a></li>
+      <li role="none"><a role="menuitem" href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Gallery Section -->
+  <div class="container section">
+    <h3>Gallery</h3>
+    <p class="center-align">Explore our collection of handloom dresses and imitation jewellery.</p>
+
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1622445273483-ec3e2a9a24e6?w=400" alt="Handloom Dress">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Handloom Dresses</span>
+            <p>Authentic weaves with a modern touch.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1603145733166-0d2b2f6e8b6e?w=400" alt="Jewellery">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Imitation Jewellery</span>
+            <p>Elegance for every occasion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card z-depth-2">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1574362848149-9b76d72d7bf0?w=400" alt="Traditional Elegance">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Traditional Elegance</span>
+            <p>Celebrate culture and individuality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ALAGA | Celebrate Individuality</p>
+  </footer>
+
+  <!-- Materialize JS -->
+    <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
