@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth > 768) closeMenu();
   });
 
-  console.log("✅ Navbar script initialized");
+  console.log("Navbar script initialized");
 });
 
 // -------------------- Comet Animation --------------------
