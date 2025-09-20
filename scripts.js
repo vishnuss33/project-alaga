@@ -179,3 +179,31 @@ function renderGallery() {
 }
 
 document.addEventListener("DOMContentLoaded", renderGallery);
+
+
+
+
+
+// FAQ Toggle
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const faq = button.parentElement;
+    const answer = faq.querySelector(".faq-answer");
+    const isOpen = faq.classList.contains("open");
+
+    // Close all other FAQs
+    document.querySelectorAll(".faq").forEach(f => {
+      f.classList.remove("open");
+      f.querySelector(".faq-answer").style.maxHeight = null;
+      f.querySelector("span").textContent = "+";
+    });
+
+    // Toggle current FAQ
+    if (!isOpen) {
+      faq.classList.add("open");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      button.querySelector("span").textContent = "−";
+    }
+  });
+});
+
