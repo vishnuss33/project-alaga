@@ -183,6 +183,17 @@ body {
     font-size: 1.1rem;
   }
 
+  /* Active link highlight */
+  #navLinks .nav-link.active {
+    background: rgba(196, 46, 46, 0);
+    
+    /* subtle highlight */
+    color: #ffffff !important;
+    /* gold color for active */
+    font-weight: 700;
+  }
+
+
   /* Smaller logo on mobile */
   #navLogo img {
     height: 40px;
