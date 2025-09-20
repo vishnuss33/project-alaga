@@ -443,3 +443,96 @@ footer p {
     text-align: center;
   }
 }
+
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.gallery h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d4af37;
+  margin: 10px auto;
+}
+
+.gallery p {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Tabs */
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.gallery-tab {
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  border-radius: 6px;
+  background: none;
+  color: #003366;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-tab.active,
+.gallery-tab:hover {
+  background: #003366;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Grids */
+.gallery-content {
+  margin-top: 20px;
+}
+
+.gallery-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid.active {
+  display: grid;
+}
+
+/* Cards */
+.gallery .card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.gallery .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery .card-content {
+  padding: 15px;
+  text-align: left;
+}
