@@ -126,7 +126,7 @@ function renderGallery() {
   if (!galleryContainer) return;
 
   if (typeof galleryData === "undefined") {
-    console.error("❌ galleryData.js not loaded. Include it before scripts.js.");
+    console.error("galleryData.js not loaded. Include it before scripts.js.");
     return;
   }
 
@@ -202,7 +202,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
     if (!isOpen) {
       faq.classList.add("open");
       answer.style.maxHeight = answer.scrollHeight + "px";
-      button.querySelector("span").textContent = "−";
+      button.querySelector("span").textContent = "-";
     }
   });
 });
